@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gainsboro;
+    margin-top: 95px;
+}
+
+header {
+    border-bottom: 2px solid bisque; 
+    height: 90px;
+    top: 0;
+    display: block;
+    position: fixed;
+    background-color: rgb(169, 111, 109);
+    width: 100%;
+}
+
+.listHeader {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header div {
+    height: 2.5em;
+    width: 100%;
+}
+
+#title,
+.listHeader {
+    color: antiquewhite;
+}
+
+#title {
+    text-decoration: overline;
+    font-size: 20px;
+    padding-top: 6px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.listHeader li {
+    display: inline;
+    margin-left: 4em;
+}
+
+.listHeader li a {
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.listHeader li a:visited {
+    color: bisque;
+}
+
+.currentPage {
+    color: darkgray;
+    background-color: lightslategrey;
+    /* background-color: antiquewhite; */
+}
+
+.listHeader li a:hover {
+    color: black;
+    background-color: antiquewhite;
+}
+#title-form{
+    color: dimgrey;
+}
+.container {
+    background-color:  rgb(169, 111, 109);
+    width: 25%;
+    margin: 0 auto;
+    border: 2px solid lightslategrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+body h2 {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+form {
+    color: bisque;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-additional {
+    margin-right: 1%;
+    font-weight: bold;
+}
+
+.container-selector {
+    margin-top: 1%;
+    display: block;
+}
+
+.form-label {
+    margin-bottom: 0.5%;
+    font-weight: bold;
+    display: block;
+}
+
+.label-selector {
+    display: inline;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    color: white; /* Цвет текста на кнопке */
+    padding: 5px 10px; /* Внутренние отступы кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругление углов */
+    cursor: pointer; /* При наведении курсора меняем на руку */
+    font-size: 16px; /* Размер шрифта */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
+
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
