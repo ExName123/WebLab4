@@ -1,5 +1,8 @@
 <?php
 include('header.html');
+$name = '';
+$email = '';
+$agreement = '';
     if(isset($_GET['name'])){
         $name=$_GET['name'];
         $email=$_GET['email'];
