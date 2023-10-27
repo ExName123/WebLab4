@@ -11,7 +11,7 @@ include('header.html');
 
                 $name = $_POST['name'];
                 $email = $_POST['email'];
-
+                $radioButton = $_POST['selector'];
                 echo '<p name="name">' . 'Здравствуйте, ' . $_POST['name'] . '</p>';
                 if ($_POST['category'] == 'proposal') {
                     echo '<p>Спасибо за ваше предложение:</p>';
@@ -30,7 +30,7 @@ include('header.html');
             ?>
         </div>
         <!-- <a class="btn" href="index.php?N='.$_POST['name'].'&E='.$_POST['email'].'&S='.$_POST['agreement'].'">Заполнить снова</a> -->
-        <a class="btn" href="index.php?name=<?php echo $_POST['name']; ?>&email=<?php echo $_POST['email']; ?>&agreement=<?php echo $_POST['agreement']; ?>">Заполнить снова</a>
+        <a class="btn" href="index.php?name=<?php echo $_POST['name']; ?>&email=<?php echo $_POST['email']; ?>&agreement=<?php echo $_POST['agreement']; ?>&selector=<?php echo $_POST['agreement']; ?>">Заполнить снова</a>
         <!-- <input type="submit" value="Заполнить снова"> -->
     </form>
 </div>
